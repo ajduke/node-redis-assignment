@@ -1,0 +1,16 @@
+p
+ a(href="/newEntry") New Entry 
+p
+ a(href="/viewEntries") View Entries
+
+h1 Enter name to get data 
+form(action="/viewDatum", method="post")
+  p
+     input(type='text',placeholder='enter to be searched for ', name='name')
+  p
+    input(type='submit', value='Search Name')
+
+ul
+ each val in rtnVal
+  li #{val.text}
+

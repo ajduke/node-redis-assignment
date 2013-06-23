@@ -1,0 +1,22 @@
+
+p
+ a(href="/newEntry") New Entry 
+p
+ a(href="/viewEntries") View Entries
+    
+
+h1 new form data
+form(action="/save", method="post")
+  p
+
+    input(type='text',placeholder='enter your name here ', name='name')
+  p
+
+    input(type='text',placeholder='enter your number here ', name='num')
+
+  p
+    input(type='submit', value='Submit')
+    input(type='reset', value='Cancel')
+
+p 
+ '#{rtnVal}'
